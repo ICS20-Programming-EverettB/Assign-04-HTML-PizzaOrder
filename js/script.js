@@ -9,39 +9,39 @@
 function calculate () {
   
   // user order input
-  let psize = parseFloat(document.getElementById('size').value);
-  let dsize = parseFloat(document.getElementById('Dsize').value);
-  let topping = parseFloat(document.getElementById('toppings').value);
+  let psize = (document.getElementById('size').value);
+  let dsize = (document.getElementById('Dsize').value);
+  let topping = (document.getElementById('toppings').value);
   let pizza = ""
   let drink = ""
   let Tnumber= ""
   // If statments for pizza size
- if ( psize ==1) {
+ if ( psize == "small") {
    
    pizza = 10
 
     }
 
-  else if ( psize ==2) {
+  else if ( psize =="medium") {
 
     pizza = 15
 
     }  
 
-	else if ( psize ==3) {
+	else if ( psize =="large") {
 
     pizza = 20
 
     }
   
   // If statments for drink size
- if ( dsize ==1) {
+ if ( dsize =="small1") {
    
    drink = 3
 
     }
 
-  else if ( dsize ==2) {
+  else if ( dsize =="large2") {
 
     drink = 5
 

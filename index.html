@@ -37,44 +37,39 @@
           
         <!-- texfield for pizza size -->
         <form action="#">
-          <p>Input Pizza Size: Small=1 Medium=2 Large=3</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="number" step= "1.0" MIN= "1" MAX="3"
-              id="size"
-            />
-            <label class="mdl-textfield__label" for="size">Pizza Size</label>
-            <span class="mdl-textfield__error">Input is not a valid size</span>
-          </div>
-        </form>
+         <label for=pizzaorder>Select Pizza Size:</label>
+           <select name="size" id="size">
+            <option value="ps">Pizza Size</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+           </select>
+      </form>
           
            <!-- texfield for drink size -->
-        <form action="#">
-          <p>Input Drink Size: Small=1 Large=2</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="number" step= "1.0" min= "1" max="2"
-              id="Dsize"
-            />
-            <label class="mdl-textfield__label" for="Dsize">Drink Size</label>
-            <span class="mdl-textfield__error">Input is not a valid size</span>
-          </div>
-        </form>
-        <!-- texfield for drink size -->
-        <form action="#">
-          <p>Input Number Of Toppings (1-6):</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="number" step= "1.0" min= "1" max="6"
-              id="toppings"
-            />
-            <label class="mdl-textfield__label" for="toppings">Number of toppings</label>
-            <span class="mdl-textfield__error">Input is not a valid number</span>
-          </div>
-        </form>
+         <form action="#">
+         <label for=pizzaorder>Select Drink Size:</label>
+           <select name="Dsize" id="Dsize">
+            <option value="ds">Drink Size</option>
+            <option value="small1">Small</option>
+            <option value="large2">Large</option>
+           </select>
+      </form>
+          
+        <!-- texfield for number of toppings -->
+         <form action="#">
+         <label for=pizzaorder>Select Day Of The Week:</label>
+           <select name="days" id="days">
+            <option value="Dayenter">Toppings</option>
+            <option value="Monday">1 topping</option>
+            <option value="Tusday">2 toppings</option>
+            <option value="Wensday">3 toppings</option>
+            <option value="Thursday">4 toppings</option>
+            <option value="Friday">5 toppings</option>
+            <option value="Satuday">6 toppings</option>
+            <option value="Sunday">Sunday</option>
+           </select>
+      </form>
         <!-- Movie button -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
