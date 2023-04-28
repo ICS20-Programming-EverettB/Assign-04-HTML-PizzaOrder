@@ -86,10 +86,12 @@ function calculate () {
   //subtotal calculation
   let subtotal = drink+pizza+Tnumber
   let tax = (drink+pizza+Tnumber) * 0.15
+  let total = tax + subtotal
   
   // output what movies user can watch
-  document.getElementById('movie-display').innerHTML = "Subtotal: $"+subtotal
-  document.getElementById('movie-display2').innerHTML = "Tax: $"+tax
+  document.getElementById('sub-display').innerHTML = "Subtotal: $"+subtotal
+  document.getElementById('tax-display').innerHTML = "Tax: $"+tax
+   document.getElementById('total-display').innerHTML = "Total: $"+total
   
 
 }
