@@ -47,44 +47,44 @@ function calculate () {
 
     }  
     // If statments for number of toppings
- if ( topping ==1) {
+ if ( topping =="1t") {
    
    Tnumber = 1
 
     }
 
-  else if ( topping ==2) {
+  else if ( topping =="2t") {
 
     Tnumber = 1.50
 
     }  
 
-	else if ( topping ==3) {
+	else if ( topping =="3t") {
 
     Tnumber = 2.50
 
     }
     
-  else if ( topping ==4) {
+  else if ( topping =="4t") {
 
     Tnumber = 3
 
     }
     
-  else if ( topping ==5) {
+  else if ( topping =="5t") {
 
     Tnumber = 3.50
 
     }
     
-  else if ( topping ==6) {
+  else if ( topping =="6t") {
 
     Tnumber = 4
 
     }
   
   //subtotal calculation
-  let subtotal = drink+pizza+Tnumber Math
+  let subtotal = drink+pizza+Tnumber
   let tax = (drink+pizza+Tnumber) * 0.15
   
   // output what movies user can watch
