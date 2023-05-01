@@ -33,7 +33,13 @@
       <main class="mdl-layout__content">
         <center>
          <h1>Pizza Order Calculator</h1>
-        <img src="./img/pepperoni-lovers.jpg" alt="Moviesymbol" width="500" height="333">
+        <img src="./img/pepperoni-lovers.jpg" alt="pizzarestarant" width="500" height="333">
+          
+      <!-- MDL Progress Bar for pizza button -->
+        <div id="Loading..." class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+          
+        <!-- text talking about pizza order-->
+          <p>This website will help you calculate the price of your favorite pizza, drink and side dish combo!</p>
           
         <!-- texfield for pizza size -->
         <form action="#">
@@ -43,6 +49,7 @@
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
+            <option value="dselect">Deselect</option>
            </select>
       </form>
           
@@ -53,6 +60,7 @@
             <option value="ds">Drink Size</option>
             <option value="small1">Small</option>
             <option value="large2">Large</option>
+            <option value="dselect">Deselect</option>
            </select>
       </form>
           
@@ -67,9 +75,22 @@
             <option value="4t">4 toppings</option>
             <option value="5t">5 toppings</option>
             <option value="6t">6 toppings</option>
+            <option value="dselect">Deselect</option>
            </select>
       </form>
-        <!-- Movie button -->
+      <!-- texfield for side dish -->
+        <form action="#">
+        <label for=pizzaorder>Select Side Dish:</label>
+         <select name="dish" id="dish">
+          <option value="dis">Dish</option>
+          <option value="caesar">Caesar Salad</option>
+          <option value="fries">Fries</option>
+          <option value="bread">Bread Sticks</option>
+          <option value="dselect">Deselect</option>
+        </select>
+      </form>
+          
+        <!-- pizza price calculator button -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
           onclick="calculate()"

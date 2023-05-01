@@ -11,3 +11,11 @@ p {
 label {
   color: #ff0000;
 }
+select {
+  color: #ff0000;
+  background-color: #ff9752;
+}
+option {
+  background-color: #ff9752;
+  color: #ff0000;
+}
